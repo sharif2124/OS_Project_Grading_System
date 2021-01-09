@@ -1,0 +1,26 @@
+#! /bin/bash
+echo "Welcome To DIU Grading System"
+echo -n"Enter the Number:"
+read number
+if [ $number -ge 80 ] && [ $number -le 100 ]
+then echo "A+"
+elif [ $number -ge 75 ] && [  $number -le 79 ]
+then echo "A"
+elif [ $number -ge 70 ] && [  $number -le 74 ]
+then echo "A-"
+elif [ $number -ge 65 ] && [ $number -le 69 ]
+then echo "B+"
+elif [ $number -ge 60 ] && [ $number -le 64 ]
+then echo "B"
+elif [ $number -ge 55 ] && [ $number -le 59 ]
+then echo "B-"
+elif [ $number -ge 50 ] && [ $number -le 54 ]
+then echo "C+"
+elif [ $number -ge 45 ] && [ $number -le 49 ]
+then echo "C"
+elif [ $number -ge 40 ] && [  $number -le 44 ]
+then echo "D"
+elif [ $number -ge 0 ] && [ $number -le 39 ]
+then echo "F"
+else echo "Invaild number"
+fi
